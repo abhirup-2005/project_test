@@ -1,0 +1,169 @@
+:root {
+  --bg: #18181b;
+  --card: #27272a;
+  --text: #fafafa;
+  --muted: #a1a1aa;
+  --accent: #f59e0b;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem ;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: var(--muted);
+}
+
+.socials a:hover {
+    color: var(--accent);
+}
+
+/* Main */
+.main {
+    padding: 2rem 1.5rem;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    gap: 3rem;
+}
+
+#name {
+    color: var(--accent);
+}
+
+.introduction p {
+    max-width: 600px;
+    color: var(--muted);
+    margin-top: 0.5rem;
+}
+
+/* Skills */
+.skill-list {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-auto-rows: 60px;
+    gap: 0.75rem;
+}
+
+.skill-list li {
+    list-style: none;
+    background: var(--card);
+    padding: 0.5rem;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dsa {
+    display: flex;
+    gap: 0.2rem;
+}
+
+#dsa a {
+    text-decoration: none;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+#dsa a:hover {
+    color: var(--muted);
+}
+
+/* Projects */
+.container {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(266px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 156px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.card-actions a {
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.card-actions a:hover {
+    color: var(--text);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
